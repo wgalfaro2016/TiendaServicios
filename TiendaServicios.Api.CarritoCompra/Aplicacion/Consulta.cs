@@ -36,6 +36,7 @@ namespace TiendaServicios.Api.CarritoCompra.Aplicacion
                     var response = await _libroService.GetLibro(new Guid( libro.ProductoSeleccionado));
                     if (response.resultado)
                     {
+
                         var objetoLibro = response.libro;
                         var carritoDetalle = new CarritoDetalleDto
                         {
